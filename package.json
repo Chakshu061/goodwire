@@ -1,0 +1,27 @@
+{
+  "name": "goodwire",
+  "version": "1.0.0",
+  "description": "",
+  "main": "backenr/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "script": "node backend/server.js",
+    "dev": "nodemon backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chakshu061/goodwire.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chakshu061/goodwire/issues"
+  },
+  "homepage": "https://github.com/Chakshu061/goodwire#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.9.0",
+    "nodemon": "^2.0.20"
+  }
+}

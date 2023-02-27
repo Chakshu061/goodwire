@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Candal&family=Montserrat&family=Poppins:wght@200;400&display=swap');
+
+*{
+    box-sizing: border-box;
+    
+}
+
+.Content{
+    height: 100vmin;
+    padding: 20px 10%;    
+    display: flex;
+}
+
+.left{
+   padding: 40px 35px; 
+}
+
+.Content p,
+h1 {
+  margin: 0px;
+  padding: 0px;
+}
+
+.Content h1{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 100px;
+}
+.Content p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    left: 5px;
+    top: -12px;
+    position: relative;
+}
+
+.right{
+    position: relative;
+    right: 350px;
+}
+.right img{
+    min-width: 80%;
+    
+}
+.stack-top{
+    z-index: 10;
+}
+
+button{
+    border: none;
+    background-color: rgb(238, 31, 66);
+    padding: 5px 20px;
+    color: white;
+    border-radius: 10px;
+    transition: all 0.2s ease 0s;
+    position: relative;
+    left: 5px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: rgb(100, 227, 231);
+}
+
+.homeHeading{
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    padding: 2vmax;
+    color:rgb(44, 42, 42);
+    text-decoration: underline;
+    font-family: 'Poppins', sans-serif;
+}
+
+.product-card{
+    width: 20vmax;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: rgb(71, 70, 70);
+    margin: 2vmax;
+    transition: all 0.5s;
+    padding-bottom: 0.5vmax;
+    border-radius: 5px;
+}
+.container{
+    display:flex;
+    justify-content: center;
+    margin: 2vmax auto;
+    width: 80vw;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+.product-card > img{
+    width: 20vmax;
+    border-radius: 5px;
+}
+.product-card > div{
+    margin: 0.5vmax;
+    display: flex;
+    justify-content: flex-start;
+}
+.product-card > div > span {
+    margin: 0.8vmax;
+    font: 400 0.7vmax "Poppins";
+}
+.product-card > p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2vmax;
+    margin: 1vmax 0.5vmax;
+    margin-bottom: 0;
+}
+.product-card > span {
+    margin: 0.5vmax;
+    color: tomato;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 1vmax;
+}
+.product-card:hover{
+    box-shadow: 0 0 5px rgba(15, 15, 15, 0.26);
+
+    transform: translateY(-1vmax);
+}
+
+@media (max-width: 600px){
+    .Content{
+        flex-direction: column;
+    }
+    .product-card > p {
+        font-size: 1.7vmax;
+      }
+    
+      .product-card > div {
+        margin: 0vmax;
+        display: block;
+      }
+    
+      .product-card > span {
+        font-size: 1.5vmax;
+      }
+    
+      .product-card > div > span {
+        margin: 0 0.5vmax;
+        font: 300 1vmax "Roboto";
+      }
+}

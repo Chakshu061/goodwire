@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Candal&family=Montserrat&family=Poppins:wght@200;400&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+.Container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;    
+}
+
+.Container img{
+    cursor:pointer;
+    max-width: 130px;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+.nav-links li a{
+    color:black;
+    font-size: 20px;
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover{
+    color:rgb(240, 90, 115);
+}
+
+.speedDial {
+    position: fixed;
+    right: 3vmax;
+    top: 14.8vmax;
+  }
+  
+  .speedDialIcon {
+    width: 56px;
+    height: 56px;
+    border-radius: 100%;
+  }
+
+@media screen and (max-width: 500px) {
+    .Container{
+        display: block;
+        margin:0 auto;
+        align-items: center;
+        justify-content: center;  
+    }
+    .nav-links{
+        display: block;
+        padding: 10px;
+    }
+    .nav-links li {
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+    }
+}

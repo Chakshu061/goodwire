@@ -1,0 +1,67 @@
+.products-content{
+    margin: 10;
+}
+
+.productsHeading {
+    margin: 2vmax auto;
+    width: 15vw;
+    border-bottom: 1px solid rgb(194, 190, 190);
+    padding-bottom: 7px;
+    color:rgb(95, 91, 91);
+    font: 500 20px "Poppins";
+    text-align: center;
+}
+
+.products-content{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 5vmax;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 2vmax auto;
+    max-width: 100%;
+}
+
+.filterBox{
+    width: 10vmax;
+    position: absolute;
+    top: 14.8vmax;
+    left: 4vmax
+}
+
+.categoryBox{
+    padding: 0;
+}
+
+.category-link{
+    list-style: none;
+    
+    color:black;
+    font-family: "Poppins" sans-serif;
+    margin: 0.4vmax;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.category-link:hover {
+    color: tomato;
+  }
+  
+  .filterBox > fieldset {
+    border: 1px solid rgba(0, 0, 0, 0.329);
+    letter-spacing: 1px;
+  }
+
+@media screen and (max-width: 600px){
+    .filterBox{
+        width: 20vmax;
+        position: static;
+        margin: auto;
+    }
+    .page-link {
+        font: 300 1.7vmax "Roboto";
+      }
+      .category-link {
+        font: 400 1.8vmax "Roboto";
+      }
+}

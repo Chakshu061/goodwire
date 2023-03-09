@@ -1,5 +1,6 @@
 .products-content{
     margin: 10;
+    height: 45vh
 }
 
 .productsHeading {
@@ -10,7 +11,58 @@
     color:rgb(95, 91, 91);
     font: 500 20px "Poppins";
     text-align: center;
+  
 }
+
+.paginationBox {
+    display: flex;
+    justify-content: center;
+    margin: 6vmax;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .page-item {
+    background-color: rgb(255, 255, 255);
+    list-style: none;
+    border: 1px solid rgba(0, 0, 0, 0.178);
+    padding: 1vmax 1.5vmax;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+  .page-item:first-child {
+    border-radius: 5px 0 0 5px;
+  }
+  
+  .page-item:last-child {
+    border-radius: 0 5px 5px 0;
+  }
+  .page-link {
+    text-decoration: none;
+    font: 300 0.7vmax "Roboto";
+    color: rgb(80, 80, 80);
+    transition: all 0.3s;
+  }
+  
+  .page-item:hover {
+    background-color: rgb(230, 230, 230);
+  }
+  
+  .page-item:hover .page-link {
+    color: rgb(0, 0, 0);
+  }
+  
+  .pageItemActive {
+    background-color: tomato;
+  }
+  
+  .pageLinkActive {
+    color: white;
+  }
 
 .products-content{
     display: flex;
@@ -34,8 +86,7 @@
 }
 
 .category-link{
-    list-style: none;
-    
+    list-style: none; 
     color:black;
     font-family: "Poppins" sans-serif;
     margin: 0.4vmax;
@@ -47,10 +98,11 @@
     color: tomato;
   }
   
-  .filterBox > fieldset {
+.filterBox > fieldset {
     border: 1px solid rgba(0, 0, 0, 0.329);
     letter-spacing: 1px;
-  }
+}
+
 
 @media screen and (max-width: 600px){
     .filterBox{

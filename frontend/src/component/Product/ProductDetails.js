@@ -12,6 +12,7 @@ import Loader from "../layout/Loader/Loader";
 import { useAlert } from "react-alert";
 import MetaData from "../layout/MetaData";
 import { addItemsToCart } from "../../actions/cartAction";
+import { useParams } from "react-router-dom";
 import {
   Dialog,
   DialogActions,
@@ -21,8 +22,6 @@ import {
 } from "@material-ui/core";
 import { Rating } from "@material-ui/lab";
 import { NEW_REVIEW_RESET } from "../../constants/productConstants";
-import { useParams } from "react-router-dom";
-
 
 const ProductDetails = () => {
   const dispatch = useDispatch();
@@ -37,16 +36,17 @@ const ProductDetails = () => {
     (state) => state.newReview
   );
 
-  const options = {
-    size: "large",
-    value: product.ratings,
-    readOnly: true,
-    precision: 0.5,
-  };
+    const options = {
+      size: "large",
+      value: product.ratings,
+      readOnly: true,
+      precision: 0.5,
+    };
+
 
   const [quantity, setQuantity] = useState(1);
   const [open, setOpen] = useState(false);
-  const [rating, setRating] = useState(0);
+  const [rating, setRating] = useState("");
   const [comment, setComment] = useState("");
 
   const increaseQuantity = () => {
@@ -130,9 +130,11 @@ const ProductDetails = () => {
                 <p>Product # {product._id}</p>
               </div>
               <div className="detailsBlock-2">
-                <Rating {...options} />
+                <Rating 
+                  {...options}
+                />
                 <span className="detailsBlock-2-span">
-                  {" "}
+            
                   ({product.numOfReviews} Reviews)
                 </span>
               </div>
@@ -180,9 +182,10 @@ const ProductDetails = () => {
             <DialogTitle>Submit Review</DialogTitle>
             <DialogContent className="submitDialog">
               <Rating
-                onChange={(e) => setRating(e.target.value)}
+                name="simple-controlled"
                 value={rating}
                 size="large"
+                onChange={(e) => setRating(e.target.value)}
               />
 
               <textarea

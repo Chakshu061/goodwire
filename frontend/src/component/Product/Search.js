@@ -26,7 +26,7 @@ const Search = () => {
           placeholder="Search a Product ..."
           onChange={(e) => setKeyword(e.target.value)}
         />
-        <input type="submit" value="Search" />
+        <input type="submit" value="" />
       </form>
     </Fragment>
   );

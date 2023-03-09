@@ -3,9 +3,9 @@
     max-width: 100%;
     padding: 0 7vmax;
     box-sizing: border-box;
-    background-color: rgb(235, 235, 235);
-    position: fixed;
-    top: 0;
+    background-color: rgb(252, 235, 205);
+    
+    top: 12.5%;
     left: 0;
     height: 100vh;
     display: flex;
@@ -17,7 +17,7 @@
     font: 400 1.2vmax "Roboto";
     padding: 0.5vmax;
     box-sizing: border-box;
-    color: rgb(255, 255, 255);
+    color: rgb(248, 46, 97);
     transition: all 0.5s;
     background-color: rgb(44, 44, 44);
   }
@@ -42,7 +42,7 @@
   }
   
   .MuiDataGrid-columnHeader {
-    background-color: tomato;
+    background-color: rgb(255, 71, 111);
     padding: 1vmax !important;
   }
   

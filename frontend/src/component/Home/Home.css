@@ -100,7 +100,7 @@ button:hover{
     display: flex;
     justify-content: flex-start;
 }
-.product-card > div > span {
+.productCardSpan {
     margin: 0.8vmax;
     font: 400 0.7vmax "Poppins";
 }
@@ -125,9 +125,23 @@ button:hover{
 @media (max-width: 600px){
     .Content{
         flex-direction: column;
+        height: 120vh;
     }
     .product-card > p {
         font-size: 1.7vmax;
+      }
+      .left {
+        position: relative;
+        right: 5vmax;
+      }
+      .left > h1{
+        font-size: 13vmax;
+      }
+
+      .right > img{
+        height: 70%;
+        position: relative;
+        left: 30vmax;
       }
     
       .product-card > div {

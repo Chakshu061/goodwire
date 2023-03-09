@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Candal&family=Montserrat&family=Poppins:wght@200;400&display=swap');
 
 .ProductDetails {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(253, 248, 234);
   width: 100vw;
   max-width: 100%;
   padding: 6vmax;
@@ -11,7 +11,7 @@
 
 .ProductDetails > div {
   width: 100%;
-  display: flex;
+  display: block;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
@@ -20,12 +20,15 @@
   border: 1px solid white;
 }
 
+
 .ProductDetails > div:last-child {
   align-items: flex-start;
 }
 
 .CarouselImage {
+  
   width: 20vmax;
+  
 }
 
 .detailsBlock-1 > h2 {

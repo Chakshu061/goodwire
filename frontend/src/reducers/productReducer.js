@@ -183,6 +183,7 @@ export const productDetailsReducer = (state = { product: {} }, action) => {
   }
 };
 
+
 export const newReviewReducer = (state = {}, action) => {
   switch (action.type) {
     case NEW_REVIEW_REQUEST:
@@ -215,6 +216,7 @@ export const newReviewReducer = (state = {}, action) => {
       return state;
   }
 };
+
 
 export const productReviewsReducer = (state = { reviews: [] }, action) => {
   switch (action.type) {

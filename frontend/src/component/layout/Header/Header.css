@@ -38,8 +38,8 @@
 .speedDial {
     position: fixed;
     right: 3vmax;
-    top: 14.8vmax;
-  }
+    top: 9.9vmax;
+}
   
   .speedDialIcon {
     width: 56px;
@@ -47,19 +47,32 @@
     border-radius: 100%;
   }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
     .Container{
         display: block;
         margin:0 auto;
         align-items: center;
         justify-content: center;  
     }
+    .Container > .logo > img {
+        position: relative;
+        left: 1.8vmax;
+    }
+    .Container > div {
+        padding-top: 25px;
+    }
     .nav-links{
         display: block;
         padding: 10px;
     }
-    .nav-links li {
+    .nav-links > li {
         padding: 10px;
         border-bottom: 1px solid #ccc;
     }
+    .speedDial{
+        position: fixed;
+        top: 1vmax;
+        right: 1vmax;
+    }
+    
 }

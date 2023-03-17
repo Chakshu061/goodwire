@@ -10,6 +10,7 @@
 - [Main Features](#--main-features)
 - [Technologies](#--technologies)
 - [Key Concepts](#--key-concepts)
+- [Microservices-diagram](#--microservices-diagram)
 - [UML Diagram](#--uml-diagram)
 - [Setup](#--setup)
 - [ENV](#-ENV)
@@ -35,6 +36,7 @@
   - The shipper pick the product, the seller mark it as shipped.
   - The shipper deliver the order, and mark it as delivered.
   - The customer may want to turn it back (to be done).
+  - Razorpay Integration (to be done).
 - **Other facilities**
   - Users can edit their account info. 
   - Users can track their order's state. 
@@ -88,7 +90,22 @@
 
 ## 📈 &nbsp; UML Diagram
 
-> 
+>![GoodWire UML diagram](https://user-images.githubusercontent.com/93027256/225909255-ec6a0284-7efc-41cc-804b-7c9113a4eb5c.png)
+
+## 🌫 &nbsp; Microservices Diagram
+
+>![Detailed API, Redux and Services Architecture](https://user-images.githubusercontent.com/93027256/225910377-3f8c5df7-bbf6-4148-84ce-81681990bce7.PNG)
+
+
+```
+## &nbsp; ENV
+- PORT=
+- DB_URI=
+- JWT_SECRET=
+- CLOUDINARY_CLOUD_NAME=
+- CLOUDINARY_API_KEY=
+- CLOUDINARY_API_ESCRET=
+
 
 
 

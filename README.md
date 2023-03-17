@@ -12,7 +12,6 @@
 - [Key Concepts](#--key-concepts)
 - [Microservices-diagram](#--microservices-diagram)
 - [UML Diagram](#--uml-diagram)
-- [Setup](#--setup)
 - [ENV](#-ENV)
 
 ## 🚩 &nbsp; Main Features

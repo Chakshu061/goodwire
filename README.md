@@ -12,7 +12,7 @@
 - [Key Concepts](#--key-concepts)
 - [Microservices-diagram](#--microservices-diagram)
 - [UML Diagram](#--uml-diagram)
-- [ENV](#-ENV)
+- [ENV](#--ENV)
 
 ## 🚩 &nbsp; Main Features
 
@@ -95,17 +95,11 @@
 
 >![Detailed API, Redux and Services Architecture](https://user-images.githubusercontent.com/93027256/225910377-3f8c5df7-bbf6-4148-84ce-81681990bce7.PNG)
 
-
-```
 ## &nbsp; ENV
+```
 - PORT=
 - DB_URI=
 - JWT_SECRET=
 - CLOUDINARY_CLOUD_NAME=
 - CLOUDINARY_API_KEY=
 - CLOUDINARY_API_ESCRET=
-
-
-
-
-

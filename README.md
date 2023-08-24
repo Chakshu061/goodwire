@@ -17,7 +17,7 @@
 ## 🚩 &nbsp; Main Features
 
 > This App was made to track the order state since the customer place it
-> once it's shipped the seller mark it as shipped, and then the Admin mark it as delivered.
+> once it's shipped the admin mark it as shipped, and then the Admin mark it as delivered.
 
 #### Project methodology
 
@@ -26,7 +26,7 @@
   - One Admin is already registered which controls the functioning of the webApp
   - Admin only created by the Admin.
   - Admins can create any other admins.
-  - Aunenticated roles
+  - Authenticated roles
   - Forgot, reset password through mail
 - **Product life cycle**
   - A seller/Admin add a product.

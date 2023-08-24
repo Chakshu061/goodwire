@@ -76,8 +76,7 @@
 - React-router (To handle routing)
 - Axios (For http requests)
 - React-toastify (To handle success and error message)
-- Sass
-
+  
 ## 💡 &nbsp; Key Concepts
 
 - MVC (Model-View-Controller)
